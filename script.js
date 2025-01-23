@@ -1,4 +1,4 @@
-// Smooth Scroll to "About" Section
+
 const aboutButton = document.getElementById('aboutBtn');
 const aboutSection = document.getElementById('about');
 
@@ -12,7 +12,7 @@ aboutButton?.addEventListener('click', () => {
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', (event) => {
-  event.preventDefault(); // Prevent default form submission
+  event.preventDefault(); 
 
   // Clear previous messages
   clearMessages();
@@ -22,7 +22,7 @@ contactForm.addEventListener('submit', (event) => {
   const email = document.getElementById('email').value.trim();
   const message = document.getElementById('message').value.trim();
 
-  // Check if all fields are filled
+  // To Check if all fields are filled
   if (!fullName || !email || !message) {
     addMessage('Please fill out all sections.', 'error');
     return;
