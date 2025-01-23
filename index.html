@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ICT Solutions Website</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header Section with Background -->
+    <header>
+        <div class="container">
+            <h1>Welcome to <span id="name">NewGen</span></h1>
+            <p>A platform for software development and design.</p>
+            
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <img src="/css/yourphoto.png" alt="Your Photo" class="profile-photo">
+        <p>
+            This is NewGen foundation excited to bring to you our new project focused on raising awareness among youth worldwide about the potential of software applications to simplify, yet enhance, creative projects.
+        </p>
+        <button id="aboutBtn">Learn More</button>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>We take your imagination to reality</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" onclick="showProject('Project 1', 'An interactive health website.', '/css/project1.jpg')">
+                <h3>Project 1</h3>
+                <p>An interactive health website.</p>
+            </div>
+            <div class="portfolio-item" onclick="showProject('Project 2', 'A dynamic blog.', '/css/project2.jpg')">
+                <h3>Project 2</h3>
+                <p>A dynamic blog.</p>
+            </div>
+            <div class="portfolio-item" onclick="showProject('Project 3', 'An application for a travel agency.', '/css/project3.jpg')">
+                <h3>Project 3</h3>
+                <p>An application for a travel agency.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Project Details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <img id="modal-image" src="" alt="Project Image">
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="fullName" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email">
+            <textarea id="message" placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <!-- Container for error/success messages -->
+        <div id="messageContainer" class="message-container"></div>
+        <div class="social-media">
+           
+                <img src="/css/linkedin.png" alt="LinkedIn" class="social-media-icon" />
+                LinkedIn
+            </a>
+            <a href="https://github.com/dmsacki" target="_blank">
+                <img src="/css/github.png" alt="GitHub" class="social-media-icon" />
+                GitHub
+            </a>
+            <a href="https://instagram.com/dobra4392" target="_blank">
+                <img src="/css/instagram.png" alt="Instagram" class="social-media-icon" />
+                Instagram
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
